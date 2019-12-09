@@ -21,10 +21,10 @@ protocol ViewControllerDelegate: class {
 class ViewModel:ViewModelDelegate {
     
     weak var delegate: ViewControllerDelegate?
-    var user: Profile
+    var user = Profile()
     
     init() {
-        self.user = Profile()
+
     }
     
     func sendValue(from emailTextField: String?, passwordTextField: String?) {
